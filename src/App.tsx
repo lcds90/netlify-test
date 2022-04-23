@@ -6,12 +6,7 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
   const fetchData = async () => {
-    const response = await axios.get('/api/genre/21/news.json', {
-      headers: {
-        'Content-Type': 'application/json;charset=UTF-8',
-        'Access-Control-Allow-Origin': '*' // Could work and fix the previous problem, but not in all APIs
-      },
-    })
+    const response = await axios.get('/api/genre/21/news.json')
     console.log(response.data);
     
   } 
