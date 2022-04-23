@@ -1,3 +1,1 @@
-/_ /index.html 200
-/\* /index.html 404
-/api/_ https://api.music-story.com/en/:splat 200
+/api/* https://api.music-story.com/en/:splat 200

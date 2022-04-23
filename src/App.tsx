@@ -6,6 +6,7 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
   const fetchData = async () => {
+    
     const response = await axios.get('/api/genre/21/news.json')
     console.log(response.data);
     
